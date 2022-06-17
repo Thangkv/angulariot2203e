@@ -14,6 +14,8 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {Assigment1Component} from "./assigment1/assigment1.component";
 import {Assigment2Component} from "./assigment2/assigment2.component";
 import {ArrayComponent} from "./assigment2/array.component";
+import {Assignment22Component} from "./baitap2/baitap2.component";
+import {PracticeexamComponent} from "./practiceexam/practiceexam.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {ArrayComponent} from "./assigment2/array.component";
     Baitap1Component,
     Assigment1Component,
     Assigment2Component,
-    ArrayComponent
+    ArrayComponent,
+    Assignment22Component,
+    PracticeexamComponent
 
   ],
   imports: [

@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+/*.first{*/
+/*  float: left;*/
+/*  width: 300px;*/
+/*}*/
 li{
   list-style: unset;
   list-style: none;
@@ -17,6 +21,20 @@ li{
   margin-top: 25px;
   margin-right: 10px;
 }
+/*.avatar1{*/
+/*  float: left;*/
+/*}*/
+/*.avatar1 i{*/
+/*  line-height: 45px;*/
+/*  font-size: 30px;*/
+/*  border: 1px solid;*/
+/*  width: 45px;*/
+/*  height: 45px;*/
+/*  border-radius: 100%;*/
+/*  text-align: center;*/
+/*  margin-top: 25px;*/
+/*  margin-right: 10px;*/
+/*}*/
 .mail{
   float: left;
 }
@@ -28,44 +46,67 @@ li{
   float: left;
   width: 100%;
 }
-.khung{
-  float: left;
-  width: 250px;
-  display: block;
-  background-color: #939390;
-}
-.khung1{
-  width: 200px;
-  /*height: 150px;*/
-  float: left;
-  display: block;
-  margin: 5px;
-  padding: 5px;
+.tables{
   border: 1px solid grey;
-  border-radius: 5px;
-  background-color: white;
 }
-li .khung{
-  list-style: none;
-}
-.khung2{
-  width: 200px;
-  float: left;
-  display: block;
-  margin: 5px;
-  padding: 5px;
+
+.table1{
   border: 1px solid grey;
-  border-radius: 5px;
-  background-color: #d4d5d2;
 }
-.khung2 i{
-  margin: 5px;
+h3{
+  margin: 30px 0px 20px 0px;
 }
-.btn {
-  background-color: transparent;
+h3 i{
+  margin-left: 15px;
+  margin-right: 20px;
 }
-.main{
-  background-color: #939390;
-  width: 1100px;
-  height: 550px;
+.picture{
+  margin-left: 150px;
 }
+h3:hover{
+  background-color: blue;
+}
+
+
+/*.khung{*/
+/*  float: left;*/
+/*  width: 1200px;*/
+/*  display: block;*/
+/*  background-color: #939390;*/
+/*}*/
+/*.khung1{*/
+/*  width: 200px;*/
+/*  height: 150px;*/
+/*  float: left;*/
+/*  display: block;*/
+/*  margin: 5px;*/
+/*  padding: 5px;*/
+/*  border: 1px solid grey;*/
+/*  border-radius: 5px;*/
+/*  background-color: white;*/
+/*}*/
+/*li .khung{*/
+/*  list-style: none;*/
+/*}*/
+/*.khung2{*/
+/*  width: 200px;*/
+/*  height: 100px;*/
+/*  float: left;*/
+/*  display: block;*/
+/*  margin: 5px;*/
+/*  padding: 5px;*/
+/*  border: 1px solid grey;*/
+/*  border-radius: 5px;*/
+/*  background-color: white;*/
+/*}*/
+/*.khung2 i{*/
+/*  margin: 5px;*/
+/*}*/
+/*.btn {*/
+/*  background-color: transparent;*/
+/*}*/
+/*.main{*/
+/*  background-color: #939390;*/
+/*  width: 1100px;*/
+/*  height: 550px;*/
+/*}*/
