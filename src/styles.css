@@ -56,15 +56,25 @@ li{
 h3{
   margin: 30px 0px 20px 0px;
 }
-h3 i{
+h3 .frame{
   margin-left: 15px;
   margin-right: 20px;
+}
+.frame i{
+  margin-left: 5px;
 }
 .picture{
   margin-left: 150px;
 }
 h3:hover{
   background-color: blue;
+}
+.frame{
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid grey;
 }
 
 

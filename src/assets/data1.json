@@ -4,20 +4,20 @@
   "data": {
     "user": [
       {
-        "name": "Magaret",
-
+        "name": "Magaret"
+      },
       {
-        "name": "Laura",
-              },
+        "name": "Laura"
+      },
       {
-        "name": "Robert",
-              },
+        "name": "Robert"
+      },
       {
-        "name": "Albert",
-              },
+        "name": "Albert"
+      },
       {
-        "name": "Michale  ",
-             }
+        "name": "Michale  "
+      }
     ],
     "contact": [
       {
@@ -57,4 +57,4 @@
       }
     ]
   }
-
+}

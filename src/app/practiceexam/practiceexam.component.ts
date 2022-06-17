@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {WeatherService} from "../services/weather.service";
+import {PraticeexamService} from "../services/praticeexam.service";
 import {user} from "../interfaces/user.interface";
 import {contact} from "../interfaces/contact.interface";
 
@@ -12,12 +12,13 @@ export class PracticeexamComponent {
 
   user: user[] = [];
   contact: contact[] = [];
-  constructor(private weatherService: WeatherService) {
+  constructor(private practiceexamService: PraticeexamService) {
   }
   ngOnInit(){
-    this.weatherService.contactList().subscribe(value => {
+    this.practiceexamService.contactList().subscribe(value => {
       this.user = value.data.user;
       this.contact = value.data.contact;
+      console.log(this.user);
     })
   }
 
