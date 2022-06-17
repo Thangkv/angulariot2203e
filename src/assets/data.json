@@ -1,0 +1,47 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "categories": [
+      {
+        "name": "Favorites",
+        "childs": [
+          {
+            "name": "Inbox"
+          },
+          {
+            "name": "Sent items"
+          }
+        ]
+      },
+      {
+        "name": "John",
+        "childs": [
+          {
+            "name": "Inbox"
+          }
+        ,
+          {
+            "name": "Sent items"
+          }
+        ]
+      }
+    ],
+    "mails": [
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "John@gmail.com",
+        "category": "John",
+        "child": "Inbox"
+      },
+      {
+        "subject": "Demo Subject",
+        "shortContent": "Content mail...",
+        "userName": "Favorites@gmail.com",
+        "category": "Favorites",
+        "child": "Inbox"
+      }
+    ]
+  }
+}

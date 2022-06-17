@@ -1,0 +1,13 @@
+
+
+<div >
+  <app-forecast *ngFor="let s of data.list; let i = index;">
+  <h2>Ngày giờ {{data.list[i].dt}}</h2>
+  <h3>Nhiệt độ: {{data.list[i].main.temp}} <sup>o</sup>C</h3>
+  <img style="transform: translate(150px,-200px)" src="http://openweathermap.org/img/wn/{{data.list[i].weather[0].icon}}@2x.png"/>
+  <P>{{data.list[i].weather[0].description}}</P>
+  </app-forecast>
+</div>
+<!--<app-forecast>-->
+<!-- {{data.city}}-->
+<!--</app-forecast>-->

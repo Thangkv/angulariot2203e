@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai tap 1</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<style>
+  .main{
+    margin-top: 50px;
+    font-size: 20px
+  }
+  .frameleft{
+  background-color: #a1a0a0;
+    margin-right: -15px;
+  }
+  .frameright{
+  margin-left: 0px;
+  }
+  table{
+
+  }
+  .row_1{
+    height: 60px;
+    width: 100%;
+    margin-left: 20px;
+  }
+  .row_2{
+    height: 60px;
+    width: 90%;
+    margin-left: 50px;
+    padding: 15px 30px;
+  }
+  .row_2:hover{
+    background-color: blue;
+    margin-right: 50px;
+  }
+
+  .row_3{
+    height: 108px;
+    width: 100%;
+
+    border: solid 1px #b2afaf;
+    padding: 20px;
+  }
+  .icon{
+    float: left;
+    width: 5%;
+    font-size: 30px
+  }
+  .content{
+    float: left;
+    width: 80%;
+  }
+
+</style>
+</head>
+<body>
+<div class="col-md-12 main">
+
+  <div class="frameleft col-md-3">
+    <div class="row_1">Favorites</div>
+    <div class="row_2">Inbox</div>
+    <div class="row_2">
+      <button type="button" (click)="sentitems()">Sent Items</button>
+    </div>
+    <div class="row_1">John</div>
+    <div class="row_2">Inbox</div>
+    <div class="row_2">Drafts</div>
+    <div class="row_2">Delete Items</div>
+    <div class="row_2">Sent Items</div>
+    <div class="row_2">Outbox</div>
+  </div>
+  <div class="frameright col-md-9">
+    <div class="row_3">
+      <div class="icon">
+        <i class="large material-icons" style="font-size: 40px">account_circle</i>
+      </div>
+<!--  <div class="content" *ngIf="let s of data; let i = index;">-->
+      <div *ngIf="data">
+<!--          {{data.mails[1].subject}}-->
+        {{data.mails[0].subject}}
+<!--       <p>{{data.mail[i].subject}}</p>-->
+     </div>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</body>
+</html>

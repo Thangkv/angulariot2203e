@@ -1,0 +1,55 @@
+<h2>{{className}}</h2>
+<button type="button" (click)=changeName()>Change</button>
+<h3>danh sách sinh viên</h3>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+  }
+</style>
+<app-student [studentName]="studentName[0]" [studentAge]=studentAge[0] [studentTel]=studentTel[0] ></app-student>
+<app-student [studentName]="studentName[1]" [studentAge]=studentAge[1] [studentTel]=studentTel[1] ></app-student>
+<app-student studentName="Nguyễn Văn C"  [studentAge]=studentAge[2] [studentTel]=studentTel[2] ></app-student>
+
+
+<app-student *ngFor="let s of studentName; let i = index;"
+  [studentName]="studentName[i]"
+  [studentAge] = "studentAge[i]">
+</app-student>
+
+<table >
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quanty</th>
+  </tr>
+  <tr>
+    <th>  <app-student *ngFor="let s of productId; let i = index;"
+                       [productId]="productId[i]">
+      </app-student></th>
+    <th>    <app-student *ngFor="let s of productId; let i = index;"
+                         [productName]="productName[i]">
+      </app-student></th>
+    <th>  <app-student *ngFor="let s of productId; let i = index;"
+                       [productPrice]="productPrice[i]">
+      </app-student></th>
+    <th><app-student *ngFor="let s of productId; let i = index;"
+                     [productQuanty]="productQuanty[i]">
+    </app-student></th>
+  </tr>
+<!--  <tr>-->
+<!--    <app-student *ngFor="let s of productId; let i = index;"-->
+
+<!--                 [productId]="productId[i]"-->
+<!--                 [productName]="productName[i]"-->
+<!--                 [productPrice]="productPrice[i]"-->
+<!--                 [productQuanty]="productQuanty[i]">-->
+
+<!--    </app-student>-->
+<!--  </tr>-->
+</table>
+
