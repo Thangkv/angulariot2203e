@@ -1,5 +1,4 @@
 import {user} from "./user.interface";
-
 export interface contact{
   title: string;
   hiredate: string;
